@@ -1,0 +1,169 @@
+.main-form {
+  position: relative;
+  top: -50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 540px;
+  padding: 20px 28px;
+
+  background-color: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-form__title {
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 29px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #282c33;
+}
+
+.main-form__input,
+.main-form__textarea {
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 38px;
+  width: 100%;
+
+  @include tablet-primary-text-style;
+  font-size: 14px;
+  line-height: 24px;
+  color: #b0abb3;
+
+  border-radius: 5px;
+  border: 2px solid #dddddd;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #efa704;
+  }
+}
+
+.main-form__textarea {
+  padding-left: 10px;
+
+  &--description {
+    min-height: 70px;
+  }
+}
+
+.main-form__label {
+  position: relative;
+  margin-bottom: 11px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+
+    display: block;
+
+    background-repeat: repeat-none;
+  }
+  &--agreement {
+    margin: 0 auto;
+  }
+  &--name {
+    width: 480px;
+
+    &::before {
+      width: 15px;
+      height: 16px;
+
+      background-image: url("../img/icons/user.svg");
+    }
+  }
+  &--email,
+  &--phone {
+    width: 230px;
+  }
+  &--email {
+    margin-right: 20px;
+
+    &::before {
+      width: 16px;
+      height: 12px;
+
+      background-image: url("../img/icons/mail.svg");
+    }
+  }
+  &--phone {
+    &::before {
+      width: 11px;
+      height: 16px;
+
+      background-image: url("../img/icons/phone.svg");
+    }
+  }
+  &--name-rept {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  &--textarea {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+
+.main-form__btn {
+  margin: 0 auto;
+
+  &--expand {
+    margin: 0 210px;
+    margin-bottom: 26px;
+    padding: 0;
+
+    background: none;
+    border: none;
+
+    @include tablet-primary-text-style;
+    font-size: 12px;
+    line-height: 24px;
+    color: #b0abb3;
+
+    border-bottom: 1px dashed #b0abb3;
+
+    @include primary-hover-active-effects;
+    &:active {
+      color: #000000;
+      opacity: 1;
+    }
+  }
+  &--send {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 12px 10px;
+    width: 230px;
+
+    background: none;
+    background-color: #71c34c;
+    border: none;
+    border-radius: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+
+    @include tablet-primary-text-style;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    @include primary-hover-active-effects;
+  }
+}
+
+.main-form__text {
+  &--agreement {
+    @include tablet-primary-text-style;
+    font-size: 12px;
+    color: #b0abb3;
+  }
+}

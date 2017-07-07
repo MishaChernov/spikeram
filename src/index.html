@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spikeram: главная</title>
+  <link href="css/style-min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="logo">
+        <img class="logo__img" src="img/footer-logo.png" width="120" height="22" alt="logo Asterisk">
+      </a>
+
+      <p class="page-header__text">Конференция Asterisk - событие, которое нельзя пропустить!</p>
+
+      <button class="burger  burger--open" type="button">Меню</button>
+    </div>
+    <section class="intro">
+      <div class="intro__wrapper">
+        <div class="intro__info">
+          <p class="intro__text  intro__text--data">XX-YY сентября 2017</p>
+          <p class="intro__text  intro__text--location">в Москве</p>
+          <a class="intro__text  intro__text--translated">Онлайн-трансляция по всему миру</a>
+        </div>
+
+        <a class="intro__btn  intro__btn--top" href="#">
+          <span class="intro__btn-text  intro__btn-text--top">Получить билет</span>
+        </a>
+      </div>
+
+      <h1 class="intro__title">Являетесь экспертом?</h1>
+      <p class="intro__descriprion">У вас есть интересная тема, которая может быть полезна специалистам по Asterisk?</p>
+      <h2 class="intro__subtitle">Приглашаем вас выступить в качестве спикера на конференции.</h2>
+      <a class="intro__btn  intro__btn--bottom" href="#">
+        <span class="intro__btn-text  intro__btn-text--bottom">Принять участие</span>
+      </a>
+    </section>
+  </header>
+
+  <main class="page-main">
+    <form class="main-form" action="/">
+      <h3 class="main-form__title">Форма заявки</h3>
+
+      <label class="main-form__label  main-form__label--name">
+        <span class="visually-hidden">Имя</span>
+        <input class="main-form__input" type="text" name="first-name" placeholder="Имя" required>
+      </label>
+      <label class="main-form__label  main-form__label--email">
+        <span class="visually-hidden">Почта</span>
+        <input class="main-form__input" type="text" name="email" placeholder="Ваша почта" required>
+      </label>
+      <label class="main-form__label  main-form__label--phone">
+        <span class="visually-hidden">Телефон</span>
+        <input class="main-form__input" type="text" name="phone" placeholder="Ваш телефон" required>
+      </label>
+      <label class="main-form__label  main-form__label--name-rept">
+        <span class="visually-hidden">Название доклада</span>
+        <textarea class="main-form__textarea" name="name-rept" rows="1" placeholder="Название доклада:"></textarea>
+      </label>
+      <label class="main-form__label  main-form__label--textarea">
+        <span class="visually-hidden">Описание доклада</span>
+        <textarea class="main-form__textarea  main-form__textarea--descriprion" name="description" placeholder="Описание доклада"></textarea>
+      </label>
+
+      <button class="main-form__btn  main-form__btn--expand">Развернуть</button>
+      <input class="main-form__btn  main-form__btn--send" type="submit" value="Отправить">
+
+      <label class="main-form__label  main-form__label--agreement">
+        <input class="main-form__checkbox" type="checkbox" name="agreement" required>
+        <span class="main-form__text  main-form__text--agreement">Соглашение об обработке персональных данных</span>
+      </label>
+    </form>
+
+    <section class="required-info">
+      <h3 class="title">
+        <span class="title__text">Что важно!</span>
+      </h3>
+
+      <div class="required-info__wrapper">
+        <p class="required-info__text">Ваш доклад должен быть полезен и применим участниками конференции. Мы не одобряем докладов про «сферических коней в вакууме». Также мы против рекламы в своих выступлениях. Прямо или косвенно рекламировать свои продукты могут только спонсоры, их совсем немного. Если хочется войти в их состав – смотрите на странице «Спонсорам».</p>
+        <p class="required-info__text  required-info__text--strong">
+          Мероприятие пройдет в сентябре года в Москве в
+          <a class="required-info__text-link" href="#">КРЦ Gagarin Space</a>
+          , Москва, Ярославское шоссе, 124.
+        </p>
+        <p class="required-info__text">
+          <span class="required-info__text  required-info__text--bold">Организаторы и активисты конференции —</span> сотрудники крупнейших компаний интеграторов  Asterisk, лидеры сообщества VoIP-разработчиков и различных тематических сообществ.
+        </p>
+      </div>
+
+      <img class="required-info__img" src="img/bg-features.jpg" width="590" height="393" alt="AsterConf">
+    </section>
+  </main>
+
+  <footer class="page-footer">
+
+  </footer>
+</body>
+</html>
