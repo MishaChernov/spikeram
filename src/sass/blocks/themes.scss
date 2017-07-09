@@ -10,7 +10,7 @@
 .themes__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-basis: $width-tablet-device;
   margin-top: 30px;
   margin-bottom: 60px;
@@ -94,13 +94,10 @@
       background-image: url("../img/sprite/icon-10.svg");
     }
   }
-  &:last-child {
-    margin: 0 auto;
-  }
 }
 
 .themes__text {
-  padding: 0 68px;
+  padding: 0 15px;
   margin-bottom: 25px;
 
   &--align {
@@ -112,6 +109,23 @@
   }
   &:last-of-type {
     margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 666px) {
+  .themes__list {
+    justify-content: space-between;
+  }
+  .themes__item {
+     &:last-child {
+      margin: 0 auto;
+    }
+  }
+  .themes__text {
+    padding: 0 68px;
+    &--bold {
+      padding: 0;
+    }
   }
 }
 

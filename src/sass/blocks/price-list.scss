@@ -1,9 +1,11 @@
 .price-list {
+  margin: 0 15px;
   margin-top: -5px;
+  margin-bottom: 70px;
 }
 
 .price-list__main-wrapper {
-  width: 620px;
+  max-width: 620px;
   margin: 0 auto;
   margin-top: 41px;
   box-sizing: border-box;
@@ -21,6 +23,11 @@
 }
 
 .price-list__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 52px;
+
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background: linear-gradient(to bottom, rgba(62,71,87,1) 0%, rgba(49,54,63,1) 100%);
@@ -37,15 +44,16 @@
 }
 
 .price-list__wrapper-form {
-  width: 460px;
+  max-width: 460px;
   margin: 0 auto;
 }
 
 .price-list__legend {
   position: relative;
-  margin-left: 20px;
-
+  width: 100%;
   margin-left: 16px;
+  margin-bottom: 16px;
+
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 3px;
@@ -56,12 +64,349 @@
   &::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 9px;
+    left: -16px;
     display: block;
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
 
     background-color: #ffb100;
+  }
+  &--radio {
+    margin-top: 43px;
+  }
+}
+
+.price-list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 440px;
+  box-sizing: border-box;
+  padding: 0 10px;
+
+  &--tickets {
+    margin-top: 25px;
+    margin-bottom: 34px;
+  }
+  &--price {
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 22px;
+  }
+  &--submit {
+    max-width: 227px;
+    margin-top: 32px;
+  }
+}
+
+.price-list__input {
+  box-sizing: border-box;
+  padding: 10px 8px;
+  width: 100%;
+
+  @include tablet-primary-text-style;
+  font-size: 14px;
+
+  color: #b0abb3;
+  background-color: #f7f8f8;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  line-height: 1;
+
+  &:hover {
+    opacity: 0.5;
+    transition-duration: 0.3;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #ff8a00;
+  }
+}
+
+.price-list__label {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+
+  &--required {
+    position: relative;
+      &::after {
+        content: "*";
+        position: absolute;
+        top: 10px;
+        right: -15px;
+        color: #ff8a00;
+    }
+  }
+  &--radio {
+    position: relative;
+    width: auto;
+    margin-right: auto;
+    margin-left: 39px;
+
+    &:hover{
+      &::after{
+        box-sizing: content-box;
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 30px;
+
+        max-width: 100px;
+        width: 75px;
+        padding: 5px;
+        padding-left: 15px;
+
+        font-size: 14px;
+        font-weight: bold;
+
+        border-radius: 3px;
+        background: #3e4757;
+        color: #ffffff;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        border: 15px solid transparent;
+        border-top: 15px solid #3e4757;
+        top: -19px;
+        left: 59px;
+      }
+    }
+  }
+  &--radio-one {
+    &:hover {
+      &::after {
+        content: "other";
+      }
+    }
+  }
+  &--radio-two {
+    &:hover {
+      &::after {
+        content: "2 900 руб.";
+      }
+    }
+  }
+  &--radio-online {
+    &:hover {
+      &::after {
+        content: "other";
+      }
+    }
+  }
+  &--agreement {
+    display: flex;
+  }
+}
+
+.price-list__radio {
+  display: none;
+}
+
+.price-list__radio-text {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -30px;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-color: #e9e9e9;
+    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+  &:hover {
+    &::before {
+      background: #aca9a9;
+    }
+  }
+}
+
+.price-list__radio:checked ~ .price-list__radio-text {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -25px;
+
+    display: block;
+    width: 9px;
+    height: 9px;
+
+    background-color: #ffb100;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+}
+
+.price-list__select {
+  margin-left: 14px;
+  width: 54px;
+  height: 26px;
+  padding-left: 13px;
+  border-radius: 3px;
+  background: #e9e9e9;
+  align-text: center;
+}
+
+.price-list__btn {
+  width: 200px;
+  margin-bottom: 30px;
+  padding-left: 0;
+
+  background-color: #ffb100;
+
+  &--send {
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0px;
+  }
+}
+
+.price-list__finish-text,
+.price-list__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.price-list__finish-text {
+  text-transform: none;
+
+  &--price {
+    margin-left: 20px;
+  }
+}
+
+.price-list__text {
+  &--agreement {
+    text-transform: none;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 0.3;
+    line-height: 12px;
+  }
+  &--finish {
+    display: block;
+    margin-top: 4px;
+    width: 187px;
+    padding: 20px 0;
+    padding-left: 11px;
+    margin-left: -12px;
+    background-color: #ffffff;
+    color: #263139;
+    border-radius: 10px;
+    font-size: 48px;
+  }
+  &--finish-small {
+    font-size: 24px;
+  }
+  &--totals {
+    margin-left: 59px;
+  }
+}
+
+.price-list__checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.price-list__finish-info {
+  position: relative;
+  margin-top: 20px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -33px;
+
+    display: block;
+    width: 15px;
+    height: 11px;
+
+    background-image: url("../img/icons/check2.png");
+  }
+}
+
+@media (min-width: 500px) {
+  .price-list__label {
+    &--email {
+      margin-right: auto;
+      width: 48%;
+      margin-bottom: 0;
+    }
+    &--phone {
+      width: 48%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .price-list__finish-info {
+    transform: translateX(-35px);
+  }
+}
+
+@media (min-width: $width-desktop-device) {
+  .price-list__main-wrapper {
+    display: flex;
+    min-width: 900px;
+  }
+  .price-list__second-wrapper {
+    width: 560px;
+  }
+  .price-list__header {
+    border-top-right-radius: 0;
+  }
+  .price-list__footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    padding-left: 0;
+
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+  }
+  .price-list__form {
+    width: 556px;
+  }
+  .price-list__wrapper {
+    &--submit {
+      margin: 0;
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 100%;
+      padding: 0;
+    }
+  }
+  .price-list__wrapper--price {
+    margin-left: 76px;
+  }
+  .price-list__btn {
+    &--send {
+      padding: 16px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      background-color: #b0abb3;
+    }
+  }
+  .price-list__checkbox {
+    width: 16px;
+    margin-left: 11px;
+    transform: translateY(-5px);
   }
 }

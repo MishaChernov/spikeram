@@ -3,14 +3,26 @@
   padding-bottom: 101px;
 }
 
+.question__wrapper {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
 .question__item {
   position: relative;
-  width: 537px;
+  max-width: 537px;
   margin: 0 auto;
   margin-bottom: 15px;
   padding-bottom: 3px;
 
   border-bottom: 1px dashed rgba(0, 0, 0, 0.6);
+}
+
+.question__title {
+  max-width: 400px;
+  margin-left: 20px;
+  margin-bottom: 38px;
+  text-align: left;
 }
 
 .question__subtitle {

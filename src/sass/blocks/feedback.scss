@@ -1,5 +1,5 @@
 .feedback {
-  width: 660px;
+  max-width: 660px;
   margin: 0 auto;
   padding-bottom: 118px;
 }
@@ -13,7 +13,9 @@
   position: relative;
   padding: 25px 10px;
   padding-bottom: 35px;
-  width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 90px;
   box-sizing: border-box;
 
   background-color: #f9f9f9;
@@ -87,6 +89,7 @@
 
 .feedback__user {
   width: 260px;
+  margin: 0 auto;
 }
 
 .feedback__user-img {
@@ -125,6 +128,15 @@
 .feedback__btn {
   width: 230px;
   padding-left: 0;
+}
+
+@media (min-width: 603px) {
+  .feedback__form {
+    margin: 0;
+  }
+  .feedback__user {
+    margin: 0;
+  }
 }
 
 @media (min-width: $width-desktop-device) {

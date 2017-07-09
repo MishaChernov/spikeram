@@ -6,11 +6,11 @@
 
 .required-info__wrapper {
   position: relative;
-  margin: 0 auto;
+  margin: 0 15px;
   margin-top: 60px;
   padding: 10px 20px;
   padding-bottom: 40px;
-  width: 640px;
+  max-width: 640px;
   box-sizing: border-box;
 
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5),
@@ -19,7 +19,8 @@
 
 .required-info__img {
   display: block;
-  margin: 0 auto;
+  margin: 0 15px;
+  width: 90%;
 }
 
 .required-info__text {
@@ -40,6 +41,17 @@
 
 .required-info__text-link {
   color: $primary-font-color;
+}
+
+@media (min-width: 680px) {
+  .required-info__wrapper {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .required-info__img {
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $width-desktop-device) {
