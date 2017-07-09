@@ -35,6 +35,29 @@
                   0 6px 0 $burger-bg-color;
     }
   }
+  &--close {
+    display: none;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      display: block;
+      width: 20px;
+      height: 2px;
+
+      background-color: $burger-bg-color;
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
 }
 
 @media (min-width: $width-desktop-device) {

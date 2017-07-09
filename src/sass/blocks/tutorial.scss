@@ -157,6 +157,10 @@
   }
 }
 
+.tutorial__main-wrapper {
+  margin-top: -375px;
+}
+
 @media (min-width: 440px) {
   .tutorial__item {
     &::after {
@@ -171,6 +175,12 @@
   }
 }
 
+@media (min-width: 545px) {
+  .tutorial__main-wrapper {
+    margin-top: -270px;
+  }
+}
+
 @media (min-width: 630px) {
   .tutorial__info {
     padding: 63px;
@@ -179,6 +189,12 @@
   }
   .tutorial__wrapper {
     padding: 0;
+  }
+}
+
+@media (min-width: 818px) {
+  .tutorial__main-wrapper {
+    margin-top: -111px;
   }
 }
 

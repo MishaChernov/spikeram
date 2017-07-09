@@ -37,6 +37,10 @@
   }
 }
 
+.feedback__title {
+  width: 243px;
+}
+
 .feedback__label {
   display: block;
   width: 100%;
@@ -153,5 +157,6 @@
   }
   .feedback__form {
     z-index: 3;
+    width: 400px;
   }
 }
