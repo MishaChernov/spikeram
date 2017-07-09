@@ -1,0 +1,44 @@
+.btn {
+  position: relative;
+
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  text-align: center;
+  font-family: $primary-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #71c34c;
+  border: none;
+  border-radius: 40px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+
+  &--plus {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 20px;
+
+      display: block;
+      width: 17px;
+      height: 17px;
+    }
+    &::after {
+      background-image: url("../img/icons/plus.png");
+      background-repeat: none;
+    }
+  }
+  @include primary-hover-active-effects;
+}
+

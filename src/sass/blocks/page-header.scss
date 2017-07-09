@@ -1,13 +1,14 @@
 .page-header__wrapper {
+  background-color: $secondary-bg-color;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.page-header__wrapper-top {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: $width-tablet-device;
   padding: 14px 10px;
   padding-bottom: 12px;
-
-  background-color: $secondary-bg-color;
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.5);
 }
 
 .page-header__text {
@@ -18,4 +19,18 @@
   font-size: 13px;
   line-height: 13px;
   color: #ffffff;
+}
+
+@media (min-width: $width-desktop-device) {
+  .page-main__wrapper {
+    padding: 0;
+  }
+  .page-header__text {
+    width: 200px;
+    color: #6b7280;
+  }
+  .page-header__wrapper-top {
+    padding: 0;
+    align-items: center;
+  }
 }

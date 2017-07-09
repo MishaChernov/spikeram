@@ -5,7 +5,6 @@ ul {
 
 body {
   min-width: $width-tablet-device;
-  max-width: 800px;
   margin: 0 auto;
 
   @include tablet-primary-text-style;
@@ -20,4 +19,16 @@ body {
   clip: rect(0 0 0 0);
   clip: rect(0, 0, 0, 0);
   position: absolute;
+}
+
+.container {
+  position: relative;
+  min-width: $width-tablet-device;
+  margin: 0 auto;
+}
+
+@media (min-width: $width-desktop-device) {
+  .container {
+    width: $width-desktop-device;
+  }
 }

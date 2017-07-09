@@ -1,0 +1,145 @@
+.feedback {
+  width: 660px;
+  margin: 0 auto;
+  padding-bottom: 118px;
+}
+
+.feedback__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback__form {
+  position: relative;
+  padding: 25px 10px;
+  padding-bottom: 35px;
+  width: 400px;
+  box-sizing: border-box;
+
+  background-color: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    right: -36px;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icons/triangle.png");
+  }
+}
+
+.feedback__label {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+
+  &--agreement {
+    margin-top: 10px;
+    text-align: center;
+  }
+  &--textarea {
+    margin-bottom: 30px;
+  }
+  &--name,
+  &--email {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+
+      display: block;
+      width: 20px;
+      height: 20px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &--name {
+    &::before {
+      background-image: url("../img/icons/user.svg");
+    }
+  }
+  &--email {
+    &::before {
+      background-image: url("../img/icons/mail.svg");
+    }
+  }
+}
+
+.feedback__text {
+  &--agreement {
+    @include tablet-primary-text-style;
+    font-size: 12px;
+    color: #b0abb3;
+  }
+}
+
+.feedback__user {
+  width: 260px;
+}
+
+.feedback__user-img {
+  margin-top: -66px;
+  margin-left: -25px;
+}
+
+.feedback__user-name {
+  display: block;
+  margin-top: -51px;
+  margin-left: 19px;
+
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.feedback__user-text {
+  display: block;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.feedback__link {
+  display: block;
+  text-align: center;
+  margin-top: 19px;
+  margin-left: -27px;
+  margin-bottom: -15px;
+
+  text-decoration: none;
+  font-size: 24px;
+  color: #282d47;
+}
+
+.feedback__btn {
+  width: 230px;
+  padding-left: 0;
+}
+
+@media (min-width: $width-desktop-device) {
+  .feedback {
+    position: relative;
+    width: 590px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .feedback__user {
+    position: absolute;
+    top: 150px;
+    right: -65px;
+  }
+  .feedback__form {
+    z-index: 3;
+  }
+}

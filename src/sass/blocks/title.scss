@@ -1,5 +1,20 @@
 .title {
   text-align: center;
+
+  &--video {
+    text-align: left;
+    width: 420px;
+  }
+  &--align {
+    text-align: left;
+    margin-bottom: 21px;
+  }
+  &--width {
+    padding: 0 200px;
+    padding-left: 85px;
+    margin-bottom: 38px;
+    text-align: left;
+  }
 }
 
 .title__text {
@@ -7,6 +22,9 @@
   @include tablet-primary-title-style;
   text-transform: uppercase;
 
+  &--video {
+    color: #ffffff;
+  }
   &::before,
   &::after {
     content: "";

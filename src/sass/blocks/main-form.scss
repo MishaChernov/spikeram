@@ -135,26 +135,19 @@
     border-bottom: 1px dashed #b0abb3;
 
     @include primary-hover-active-effects;
+
     &:active {
       color: #000000;
       opacity: 1;
     }
   }
   &--send {
-    margin: 0 auto;
     margin-bottom: 10px;
     padding: 12px 10px;
     width: 230px;
 
-    background: none;
-    background-color: #71c34c;
-    border: none;
-    border-radius: 30px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
-
-    @include tablet-primary-text-style;
+    font-size: 16px;
     color: #ffffff;
-    text-transform: uppercase;
 
     @include primary-hover-active-effects;
   }
@@ -165,5 +158,12 @@
     @include tablet-primary-text-style;
     font-size: 12px;
     color: #b0abb3;
+  }
+}
+
+@media (min-width: $width-desktop-device) {
+  .main-form {
+    top: -410px;
+    right: -311px;
   }
 }

@@ -3,12 +3,24 @@
 @import "global/fonts.scss";
 @import "global/global-style.scss";
 
+@import "blocks/btn.scss";
+@import "blocks/btn_secondary.scss";
+@import "blocks/input-cus.scss";
 @import "blocks/title.scss";
 @import "blocks/burger.scss";
+@import "blocks/main-menu.scss";
 @import "blocks/intro.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-form.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
-@import "blocks/page-footer.scss";
 @import "blocks/required-info.scss";
+@import "blocks/themes.scss";
+@import "blocks/video.scss";
+@import "blocks/tutorial.scss";
+@import "blocks/recomendations.scss";
+@import "blocks/question.scss";
+@import "blocks/feedback.scss";
+@import "blocks/map.scss";
+@import "blocks/price-list.scss";
+@import "blocks/page-footer.scss";

@@ -1,0 +1,28 @@
+.input-cus {
+  box-sizing: border-box;
+  padding: 10px 8px;
+  width: 100%;
+
+  @include tablet-primary-text-style;
+  font-size: 14px;
+
+  color: #b0abb3;
+  background-color: #f7f8f8;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  line-height: 1;
+  &--long{
+    width: 440px;
+  }
+  &--short{
+    width: 210px;
+  }
+  &--bg {
+    padding-left: 40px;
+    background-color: #ffffff;
+  }
+  &--textarea {
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+}

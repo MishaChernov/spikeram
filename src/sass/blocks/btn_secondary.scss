@@ -1,0 +1,43 @@
+.btn_secondary {
+  position: relative;
+  color: #ff8a00;
+  background: transparent;
+  border: 1px solid #ff8a00;
+
+  &:after{
+    @include set-icon( url(../img/icons/adobe-reader.png) ,16px, 20px);
+    top: 13px;
+    left: 20px;
+  }
+}
+
+
+.btn-success,
+.btn-disabled{
+
+  display: block;
+  width: 205px;
+  padding: 20px 0 18px;
+
+  font-family: "Open Sans";
+  font-size: 14px;
+  text-transform: uppercase;
+
+  border-radius: 50px;
+  border: none;
+  border-bottom: 2px solid #f57c00;
+  background-color: #ffb100;
+  color: #ffffff;
+  line-height: 1;
+
+  transition: all 0.4s;
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+.btn-disabled{
+  background-color: #b0abb3;
+  border-color: #7f8890;
+}

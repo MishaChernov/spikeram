@@ -1,0 +1,15 @@
+@media (min-width: $width-desktop-device) {
+  .page-main__wrapper {
+    &--first {
+      margin-top: -392px;
+      background-image: url("../img/bg-main.jpg");
+      background-position: center bottom;
+      background-size: cover;
+      background-repeat: repeat;
+    }
+    &--second {
+      display: flex;
+      padding-top: 18px;
+    }
+  }
+}
