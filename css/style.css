@@ -1371,8 +1371,11 @@ body {
     background-image: url("../img/icons/check2.png"); }
 
 .price-list__wrapper {
-  max-width: 300px;
+  max-width: 400px;
   text-align: center; }
+
+.price-list__legend--radio {
+  text-align: left; }
 
 .address-card {
   box-sizing: border-box;
