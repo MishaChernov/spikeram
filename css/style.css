@@ -1142,7 +1142,7 @@ body {
 .price-list {
   margin: 0 15px;
   margin-top: -5px;
-  margin-bottom: 70px; }
+  margin-bottom: 0; }
 
 .price-list__main-wrapper {
   max-width: 620px;
@@ -1757,6 +1757,7 @@ body {
     background-repeat: repeat; }
   .page-main__wrapper-bg{
     width: 100%;
+    padding-bottom: 70px;
     background-image: url("../img/bg-main.jpg");
     background-position: center bottom;
     background-size: cover;
