@@ -1550,7 +1550,9 @@ body {
   .feedback__user{
     margin: 0; }
   .feedback__title{
-    margin: 18px 0; } }
+    margin: 18px;
+    margin-right: 0;
+    margin-left: 0; } }
   @media (min-width: 630px){
   .tutorial__info{
     padding: 63px;
