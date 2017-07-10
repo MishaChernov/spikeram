@@ -1325,6 +1325,7 @@ body {
     margin-left: 20px; }
 
 .price-list__text--agreement {
+  margin-top: 4px;
   text-transform: none;
   padding-left: 5px;
   font-size: 12px;
@@ -1373,9 +1374,13 @@ body {
 .price-list__wrapper {
   max-width: 400px;
   text-align: center; }
+  .price-list__wrapper--tickets {
+    text-align: left; }
 
-.price-list__legend--radio {
+.price-list__legend {
   text-align: left; }
+  .price-list__legend--radio {
+    text-align: left; }
 
 .address-card {
   box-sizing: border-box;
@@ -1512,6 +1517,8 @@ body {
     font-size: 40px;
     line-height: 48px;
     color: #31363f; }
+  .title__text--video{
+    color: #ffffff; }
   .price-list__label--email{
     margin-right: auto;
     width: 48%;
@@ -1658,7 +1665,9 @@ body {
     font-weight: 300;
     font-size: 53px;
     line-height: 57px;
-    color: #31363f; } }
+    color: #31363f; }
+  .title__text--video{
+    color: #ffffff; } }
   @media (min-width: 1124px){
   .burger{
     display: none; }
@@ -1863,8 +1872,9 @@ body {
     margin-right: auto; }
   .question__title{
     padding: 0;
-    margin-left: 62px;
-    text-align: center; }
+    margin-left: 10px;
+    text-align: left;
+    max-width: 600px; }
   .question__title-text{
     text-align: center; }
   .feedback{
@@ -1913,7 +1923,9 @@ body {
   .price-list__checkbox{
     width: 16px;
     margin-left: 11px;
-    transform: translateY(-5px); } }
+    transform: translateY(-5px); }
+  .price-list__text--agreement{
+    margin-top: 0; } }
   @media (min-width: 1333px){
   .feedback__user{
     right: -65px; }
