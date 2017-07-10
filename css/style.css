@@ -700,7 +700,7 @@ body {
   top: -275px;
   display: block;
   margin: 0 auto;
-  width: 323px;
+  width: 320px;
   height: 413px;
   padding-top: 19px;
   text-align: center;
@@ -809,7 +809,7 @@ body {
     position: absolute;
     bottom: 17px;
     left: 50%;
-    transform: scale(0.8) translateX(-65%);
+    transform: scale(0.7) translateX(-73%);
     display: block;
     width: 433px;
     height: 300px;
