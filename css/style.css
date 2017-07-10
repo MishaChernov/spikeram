@@ -60,8 +60,12 @@ body {
 
 .container {
   position: relative;
-  min-width: 320px;
+  min-width: 300px;
   margin: 0 auto; }
+
+.no-js .main-menu,
+.no-js .question__text {
+  display: block; }
 
 .btn {
   position: relative;
@@ -252,6 +256,10 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.4);
   border-top: none;
   transition-duration: 1s; }
+  .main-menu--opened {
+    display: block; }
+  .main-menu--closed {
+    display: none; }
 
 .main-menu__list {
   list-style: none; }
@@ -946,6 +954,8 @@ body {
   font-size: 14px; }
   .question__text--visually {
     display: block; }
+  .question__text--hidden {
+    display: none; }
 
 .question__btn {
   position: absolute;
