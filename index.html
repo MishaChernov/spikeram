@@ -76,38 +76,40 @@
   </header>
 
   <main class="page-main">
-    <form class="main-form" action="/">
-      <h3 class="main-form__title">Форма заявки</h3>
+    <div class="container">
+      <form class="main-form" action="/">
+        <h3 class="main-form__title">Форма заявки</h3>
 
-      <label class="main-form__label  main-form__label--name">
-        <span class="visually-hidden">Имя</span>
-        <input class="main-form__input" type="text" name="first-name" placeholder="Имя" required>
-      </label>
-      <label class="main-form__label  main-form__label--email">
-        <span class="visually-hidden">Почта</span>
-        <input class="main-form__input" type="text" name="email" placeholder="Ваша почта" required>
-      </label>
-      <label class="main-form__label  main-form__label--phone">
-        <span class="visually-hidden">Телефон</span>
-        <input class="main-form__input" type="phone" name="phone" placeholder="Ваш телефон" required>
-      </label>
-      <label class="main-form__label  main-form__label--name-rept">
-        <span class="visually-hidden">Название доклада</span>
-        <textarea class="main-form__textarea" name="name-rept" rows="1" placeholder="Название доклада:"></textarea>
-      </label>
-      <label class="main-form__label  main-form__label--textarea">
-        <span class="visually-hidden">Описание доклада</span>
-        <textarea class="main-form__textarea  main-form__textarea--descriprion" name="description" placeholder="Описание доклада"></textarea>
-      </label>
+        <label class="main-form__label  main-form__label--name">
+          <span class="visually-hidden">Имя</span>
+          <input class="main-form__input" type="text" name="first-name" placeholder="Имя" required>
+        </label>
+        <label class="main-form__label  main-form__label--email">
+          <span class="visually-hidden">Почта</span>
+          <input class="main-form__input" type="email" name="email" placeholder="Ваша почта" required>
+        </label>
+        <label class="main-form__label  main-form__label--phone">
+          <span class="visually-hidden">Телефон</span>
+          <input class="main-form__input" type="number" name="phone" placeholder="Ваш телефон" required>
+        </label>
+        <label class="main-form__label  main-form__label--name-rept">
+          <span class="visually-hidden">Название доклада</span>
+          <textarea class="main-form__textarea" name="name-rept" rows="1" placeholder="Название доклада:"></textarea>
+        </label>
+        <label class="main-form__label  main-form__label--textarea">
+          <span class="visually-hidden">Описание доклада</span>
+          <textarea class="main-form__textarea  main-form__textarea--descriprion" name="description" placeholder="Описание доклада"></textarea>
+        </label>
 
-      <button class="main-form__btn  main-form__btn--expand">Развернуть</button>
-      <input class="btn  main-form__btn--send" type="submit" value="Отправить">
+        <button class="main-form__btn  main-form__btn--expand">Развернуть</button>
+        <input class="btn  main-form__btn--send" type="submit" value="Отправить">
 
-      <label class="main-form__label  main-form__label--agreement">
-        <input class="main-form__checkbox" type="checkbox" name="agreement" required>
-        <span class="main-form__text  main-form__text--agreement">Соглашение об обработке персональных данных</span>
-      </label>
-    </form>
+        <label class="main-form__label  main-form__label--agreement">
+          <input class="main-form__checkbox" type="checkbox" name="agreement" required>
+          <span class="main-form__text  main-form__text--agreement">Соглашение об обработке персональных данных</span>
+        </label>
+      </form>
+    </div>
 
     <div class="page-main__wrapper  page-main__wrapper--first">
       <div class="container">
@@ -128,7 +130,7 @@
             </p>
           </div>
 
-          <img class="required-info__img" src="img/bg-features.jpg" width="590" height="393" alt="AsterConf">
+          <img class="required-info__img" src="img/bg-features.jpg" width="590" alt="AsterConf">
         </section>
 
         <section class="themes">
@@ -290,37 +292,37 @@
             </h3>
             <div class="question__item">
               <h5 class="question__subtitle">Некоторые интересные мне доклады будут идти в обоих залах. Как быть?</h5>
-              <button class="question__btn  question__btn--opened">Открыть</button>
+              <button class="question__btn">Открыть</button>
               <p class="question__text">Выберите тот, что интереснее и присутствуйте на нем лично. А второй - посмотрите позже в записи.</p>
             </div>
             <div class="question__item">
               <h5 class="question__subtitle">Будут ли доступны видео-записи с конференции?</h5>
-              <button class="question__btn  question__btn--opened">Открыть</button>
+              <button class="question__btn">Открыть</button>
               <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, et dignissimos sapiente fuga facere libero tempora sit neque blanditiis suscipit officiis error eveniet, distinctio dicta enim nisi consequuntur animi possimus.</p>
             </div>
             <div class="question__item">
               <h5 class="question__subtitle">Участие будет оплачиваться от компании. Можно ли не указывать «банкет» отдельной </h5>
-              <button class="question__btn  question__btn--opened">Открыть</button>
+              <button class="question__btn">Открыть</button>
               <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, et dignissimos sapiente fuga facere libero tempora sit neque blanditiis suscipit officiis error eveniet, distinctio dicta enim nisi consequuntur animi possimus.</p>
             </div>
             <div class="question__item">
               <h5 class="question__subtitle">Я приеду из другого города. Как мне не заблудиться в Москве?</h5>
-              <button class="question__btn  question__btn--opened">Открыть</button>
+              <button class="question__btn">Открыть</button>
               <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, et dignissimos sapiente fuga facere libero tempora sit neque blanditiis suscipit officiis error eveniet, distinctio dicta enim nisi consequuntur animi possimus.</p>
             </div>
             <div class="question__item">
               <h5 class="question__subtitle">Бухгалтерия просит Счет и Договор в оригинале. Можно ли их получить?</h5>
-              <button class="question__btn  question__btn--opened">Открыть</button>
+              <button class="question__btn">Открыть</button>
               <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, et dignissimos sapiente fuga facere libero tempora sit neque blanditiis suscipit officiis error eveniet, distinctio dicta enim nisi consequuntur animi possimus.</p>
             </div>
             <div class="question__item">
               <h5 class="question__subtitle">Можно ли будет пообщаться со спикером после выступления?</h5>
-              <button class="question__btn  question__btn--opened">Открыть</button>
+              <button class="question__btn">Открыть</button>
               <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, et dignissimos sapiente fuga facere libero tempora sit neque blanditiis suscipit officiis error eveniet, distinctio dicta enim nisi consequuntur animi possimus.</p>
             </div>
             <div class="question__item">
               <h5 class="question__subtitle">Что нужно иметь с собой для посещения?</h5>
-              <button class="question__btn  question__btn--opened">Открыть</button>
+              <button class="question__btn">Открыть</button>
               <p class="question__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, et dignissimos sapiente fuga facere libero tempora sit neque blanditiis suscipit officiis error eveniet, distinctio dicta enim nisi consequuntur animi possimus.</p>
             </div>
           </div>
@@ -338,7 +340,7 @@
               </label>
               <label class="feedback__label  feedback__label--email">
                 <span class="visually-hidden">Ваша почта</span>
-                <input class="input-cus  input-cus--bg" type="text" name="email" placeholder="Ваша почта" required>
+                <input class="input-cus  input-cus--bg" type="email" name="email" placeholder="Ваша почта" required>
               </label>
               <label class="feedback__label  feedback__label--textarea">
                 <span class="visually-hidden">Задайте вопрос</span>
@@ -384,11 +386,11 @@
                   </label>
                   <label class="price-list__label  price-list__label--email">
                     <span class="visually-hidden">Электонная почта</span>
-                    <input class="price-list__input" type="text" name="email" placeholder="Электронная почта">
+                    <input class="price-list__input" type="email" name="email" placeholder="Электронная почта">
                   </label>
                   <label class="price-list__label  price-list__label--phone  price-list__label--required">
                     <span class="visually-hidden">Телефон</span>
-                    <input class="price-list__input" type="text" name="phone" placeholder="Телефон" required>
+                    <input class="price-list__input" type="number" name="phone" placeholder="Телефон" required>
                   </label>
                 </div>
 
@@ -421,7 +423,7 @@
                   </label>
                 </div>
 
-                <a class="price-list__btn  btn" href="#">Дальше</a>
+                <button class="price-list__btn  btn">Дальше</button>
               </div>
             </div>
 
@@ -499,6 +501,6 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
-  <script src="js/main-js-min.js" type="text/javascript"></script>
+  <script src="js/main-js.js" type="text/javascript"></script>
 </body>
 </html>
