@@ -940,7 +940,8 @@ body {
   margin: 0 auto;
   margin-bottom: 15px;
   padding-bottom: 3px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.6); }
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.6);
+  transition-duration: 1s; }
 
 .question__title {
   max-width: 400px;
@@ -970,7 +971,9 @@ body {
 .question__text {
   display: none;
   padding: 0 20px;
-  font-size: 14px; }
+  font-size: 14px;
+  animation-name: questionOpen;
+  animation-duration: 0.2s; }
   .question__text--visually {
     display: block; }
   .question__text--hidden {
@@ -1010,6 +1013,14 @@ body {
     cursor: default; }
     .question__btn--opened::after {
       display: none; }
+
+@keyframes questionOpen {
+  0% {
+    opacity: 0.5;
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .feedback {
   max-width: 660px;
