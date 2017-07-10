@@ -70,8 +70,7 @@ body {
 .container {
   position: relative;
   min-width: 300px;
-  margin: 0 auto;
-  border: 1px solid red; }
+  margin: 0 auto; }
 
 .no-js .main-menu,
 .no-js .question__text {
@@ -1483,22 +1482,22 @@ body {
     padding-top: 2px;
     padding-left: 35px;
     font-size: 14px; }
-  .address-card__btn {
+  .address-card .address-card__btn {
     max-width: 255px;
     margin-top: 12px;
     text-transform: uppercase;
     font-size: 14px; }
-    .address-card__btn:nth-of-type(1) {
+    .address-card .address-card__btn:nth-of-type(1) {
       margin-top: 31px; }
-    .address-card__btn::before, .address-card__btn::after {
+    .address-card .address-card__btn::before, .address-card .address-card__btn::after {
       left: 10px; }
-    .address-card__btn--adobe {
+    .address-card .address-card__btn--adobe {
       position: relative;
       background: none;
       color: #ff8a00;
       box-shadow: none;
       border: 1px solid #ff8a00; }
-      .address-card__btn--adobe::before {
+      .address-card .address-card__btn--adobe::before {
         content: "";
         position: absolute;
         top: 15px;
