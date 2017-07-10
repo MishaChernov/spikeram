@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asterisk: главная</title>
+  <title>Asterisk: спикерам</title>
   <link href="css/style-min.css" rel="stylesheet">
 </head>
 <body>
@@ -33,7 +33,7 @@
                 <a class="main-menu__link" href="#">Стоимость</a>
               </li>
               <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Спикерам</a>
+                <a class="main-menu__link  main-menu__link--active">Спикерам</a>
               </li>
               <li class="main-menu__item">
                 <a class="main-menu__link" href="#">Спонсорам</a>
@@ -84,7 +84,7 @@
       </label>
       <label class="main-form__label  main-form__label--phone">
         <span class="visually-hidden">Телефон</span>
-        <input class="main-form__input" type="text" name="phone" placeholder="Ваш телефон" required>
+        <input class="main-form__input" type="phone" name="phone" placeholder="Ваш телефон" required>
       </label>
       <label class="main-form__label  main-form__label--name-rept">
         <span class="visually-hidden">Название доклада</span>
@@ -456,8 +456,8 @@
 
       <address class="address-card">
         <p class="address-card__title">Контакты</p>
-        <p class="address-card__info">г. Москва, Ярославское ш., 124</p>
-        <p class="address-card__number">+7 (495) 373-64-23</p>
+        <p class="address-card__info  address-card__info--bg">г. Москва, Ярославское ш., 124</p>
+        <p class="address-card__number  address-card__number--bg">+7 (495) 373-64-23</p>
         <p class="address-card__sub-number">звонки по Москве</p>
         <p class="address-card__number">+7 (495) 373-64-23</p>
         <p class="address-card__sub-number">звонки по России</p>
@@ -477,7 +477,7 @@
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__wrapper">
-        <a class="logo">
+        <a class="logo  logo--footer">
           <img class="logo__img" src="img/footer-logo.png" width="120" height="22" alt="logo Asterisk">
         </a>
 
@@ -492,5 +492,12 @@
       </div>
     </div>
   </footer>
+  <style>
+  .displayDisplay {
+    display: block !important;
+  }
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/main-js.js"></script>
 </body>
 </html>
