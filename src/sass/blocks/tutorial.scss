@@ -73,15 +73,15 @@
   position: relative;
 
   margin-top: 40px;
-  padding-bottom: 291px;
+  padding-bottom: 300px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 17px;
+    bottom: 15px;
     left: 50%;
-    transform: scale(0.8) translateX(-65%);
+    transform: scale(0.7) translateX(-73%);
 
     display: block;
     width: 433px;
@@ -103,21 +103,20 @@
     }
   }
   &:nth-of-type(3) {
-    padding-bottom: 301px;
     &::after {
       background-image: url("../img/info-3.png");
     }
   }
   &:nth-of-type(4) {
-    padding-bottom: 287px;
     &::after {
+      bottom: 30px;
       background-image: url("../img/info-4.png");
     }
   }
   &:nth-of-type(5) {
-    padding-bottom: 323px;
+    padding-bottom: 300px;
     &::after {
-      bottom: 50px;
+      bottom: 30px;
       background-image: url("../img/info-5.png");
     }
   }
@@ -171,13 +170,17 @@
     &--size {
     font-size: 24px;
     line-height: 30px
-  }
+    }
   }
 }
 
 @media (min-width: 545px) {
   .tutorial__main-wrapper {
     margin-top: -270px;
+
+    &::after {
+      bottom: 30px;
+    }
   }
 }
 
@@ -189,6 +192,9 @@
   }
   .tutorial__wrapper {
     padding: 0;
+  }
+  .tutorial__item {
+    padding-bottom: 300px;
   }
 }
 
@@ -202,12 +208,14 @@
   .tutorial {
     background-image: url("../img/bg-main.jpg");
     background-position: center bottom;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .tutorial__info {
     width: 500px;
-    margin-left: 604px;
+    margin-left: 575px;
     padding-bottom: 0;
+    padding-right: 0;
   }
   .tutorial__video-wrapper {
     padding-bottom: 57px;
@@ -215,7 +223,7 @@
   .tutorial__main-wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: $width-desktop-device;
+    max-width: $width-desktop-device;
     margin-top: -48px;
   }
   .tutorial__wrapper {
@@ -224,14 +232,14 @@
 
     &--width {
       width: 622px;
-      padding-bottom: 48px;
+      padding-bottom: 10px;
     }
   }
   .tutorial__item {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding-bottom: 0;
+    padding-bottom: 20px;
     margin-top: 99px;
 
     &:nth-child(1) {
@@ -240,7 +248,7 @@
     &:nth-child(3),
     &:nth-child(4),
     &:nth-child(5) {
-      padding-bottom: 0;
+      padding-bottom: 20px;
     }
     &:nth-child(odd) {
       padding-left: 550px;
@@ -263,5 +271,11 @@
   }
   .tutorial__title {
     width: 600px;
+  }
+}
+
+@media (min-width: 1200) {
+  .tutorial__info {
+    margin-left: 580px;
   }
 }

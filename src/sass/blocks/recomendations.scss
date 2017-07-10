@@ -68,6 +68,14 @@
   }
 }
 
+@media (min-width: 644px) {
+  .recomendations__title {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: 700px) {
   .recomendations__item {
     margin: 0 auto;
@@ -75,6 +83,11 @@
   }
   .recomendations__text {
     padding: 0 66px;
+  }
+  .recomendations__title {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

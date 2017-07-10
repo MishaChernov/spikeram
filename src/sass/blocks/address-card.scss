@@ -1,8 +1,9 @@
 .address-card {
   box-sizing: border-box;
 
-  margin: 0 auto;
-  margin-bottom: 10px;
+  margin: 0 10px;
+  margin-bottom: 40px;
+  margin-top: 40px;
   max-width: 365px;
   padding: 31px 32px 18px;
 
@@ -23,17 +24,47 @@
     font-size: 36px;
   }
 
-  &__info{
+  &__info {
     padding-top: 24px;
     padding-left: 35px;
     font-size: 16px;
+
+    &--bg {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 23px;
+        left: 5px;
+        display: block;
+        width: 15px;
+        height: 18px;
+
+        background-image: url("../img/icons/Metka.png");
+      }
+    }
   }
 
-  &__number{
+  &__number {
     padding-top: 16px;
     padding-left: 35px;
     font-weight: 900;
     font-size: 18px;
+
+    &--bg {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 23px;
+        left: 5px;
+        display: block;
+        width: 20px;
+        height: 12px;
+
+        background-image: url("../img/icons/Phone.png");
+      }
+    }
   }
 
   &__sub-number{
@@ -42,14 +73,18 @@
     font-size: 14px;
   }
 
-  &__btn{
-    width: 255px;
+  .address-card__btn{
+    max-width: 255px;
     margin-top: 12px;
     text-transform: uppercase;
     font-size: 14px;
 
     &:nth-of-type(1){
       margin-top: 31px;
+    }
+    &::before,
+    &::after {
+      left: 10px;
     }
     &--adobe {
       position: relative;
@@ -61,8 +96,8 @@
       &::before {
         content: "";
         position: absolute;
-        top: 12px;
-        left: 12px;
+        top: 15px;
+        left: 10px;
 
         display: block;
         width: 16px;
@@ -78,10 +113,24 @@
   }
 }
 
+@media (min-width: 405px) {
+  .address-card {
+    margin: 40px auto;
+  }
+  .address-card__btn {
+    width: 255px;
+
+    &::before,
+    &::after {
+      left: 21px;
+    }
+  }
+}
+
 @media (min-width: 700px) {
   .address-card {
     position: absolute;
-    top: 38px;
+    top: -470px;
     left: 13%;
     margin: 0;
   }

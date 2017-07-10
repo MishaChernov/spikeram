@@ -5,7 +5,7 @@
 
   display: block;
   margin: 0 auto;
-  width: 323px;
+  width: 320px;
   height: 413px;
   padding-top: 19px;
 
@@ -88,6 +88,12 @@
 @media (min-width: $width-desktop-device) {
   .video {
     margin-top: -190px;
+    left: -235px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .video {
     left: -300px;
   }
 }

@@ -17,6 +17,15 @@
 }
 
             /*device style title*/
+@mixin mobile-primary-title-style {
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $mobile-primary-size-title;
+  line-height: $mobile-primary-line-height-title;
+  color: $secondary-font-color;
+}
+
 @mixin tablet-primary-title-style {
   font-family: $primary-font-family;
   font-style: normal;

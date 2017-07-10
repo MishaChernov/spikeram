@@ -1,3 +1,13 @@
+input[type="checkbox"],
+input[type="submit"],
+button {
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -23,12 +33,17 @@ body {
 
 .container {
   position: relative;
-  min-width: 320px;
+  min-width: 300px;
   margin: 0 auto;
 }
 
 @media (min-width: $width-desktop-device) {
   .container {
-    width: $width-desktop-device;
+    max-width: $width-desktop-device;
   }
+}
+
+.no-js .main-menu,
+.no-js .question__text {
+  display: block;
 }

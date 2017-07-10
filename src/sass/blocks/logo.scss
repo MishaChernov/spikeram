@@ -1,4 +1,22 @@
 .logo {
   margin-right: 20px;
   margin-top: 5px;
+
+  &--footer {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: $width-desktop-device) {
+  .logo {
+    &--footer {
+      margin-right: 20px;
+    }
+  }
 }

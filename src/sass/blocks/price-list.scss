@@ -1,7 +1,7 @@
 .price-list {
   margin: 0 15px;
   margin-top: -5px;
-  margin-bottom: 70px;
+  margin-bottom: 0;
 }
 
 .price-list__main-wrapper {
@@ -83,6 +83,7 @@
   max-width: 440px;
   box-sizing: border-box;
   padding: 0 10px;
+  margin: 0 auto;
 
   &--tickets {
     margin-top: 25px;
@@ -125,7 +126,7 @@
 
 .price-list__label {
   display: block;
-  width: 100%;
+  width: 95%;
   margin-bottom: 20px;
 
   &--required {
@@ -134,7 +135,7 @@
         content: "*";
         position: absolute;
         top: 10px;
-        right: -15px;
+        right: -16px;
         color: #ff8a00;
     }
   }
@@ -150,7 +151,7 @@
         content: "";
         position: absolute;
         top: -50px;
-        left: 30px;
+        left: -45px;
 
         max-width: 100px;
         width: 75px;
@@ -168,10 +169,11 @@
         content: "";
         position: absolute;
         display: block;
+        width: 1px;
         border: 15px solid transparent;
         border-top: 15px solid #3e4757;
         top: -19px;
-        left: 59px;
+        left: -19px;
       }
     }
   }
@@ -198,6 +200,7 @@
   }
   &--agreement {
     display: flex;
+    cursor: pointer;
   }
 }
 
@@ -246,13 +249,19 @@
 }
 
 .price-list__select {
+  position: relative;
   margin-left: 14px;
+  margin-top: 15px;
   width: 54px;
   height: 26px;
   padding-left: 13px;
   border-radius: 3px;
-  background: #e9e9e9;
+  background: #e9e9e9 url("../img/icons/select.png") no-repeat right;
   align-text: center;
+  cursor: pointer;
+
+  @include primary-hover-active-effects;
+  appearance: none;
 }
 
 .price-list__btn {
@@ -263,9 +272,10 @@
   background-color: #ffb100;
 
   &--send {
-    margin: 0;
-    margin-bottom: 14px;
-    padding: 0px;
+    margin: 0 auto;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #b0abb3;
   }
 }
 
@@ -287,8 +297,9 @@
 
 .price-list__text {
   &--agreement {
+    margin-top: 4px;
     text-transform: none;
-    padding-left: 20px;
+    padding-left: 5px;
     font-size: 12px;
     font-weight: 300;
     color: #ffffff;
@@ -299,9 +310,8 @@
     display: block;
     margin-top: 4px;
     width: 187px;
-    padding: 20px 0;
+    padding: 20px 15px;
     padding-left: 11px;
-    margin-left: -12px;
     background-color: #ffffff;
     color: #263139;
     border-radius: 10px;
@@ -312,6 +322,8 @@
   }
   &--totals {
     margin-left: 59px;
+    margin-left: 0;
+    max-width: 210px;
   }
 }
 
@@ -319,6 +331,7 @@
   width: 20px;
   height: 20px;
   margin: 0;
+  transform: translateX(33px);
 }
 
 .price-list__finish-info {
@@ -329,8 +342,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 12px;
-    left: -33px;
+    top: 9px;
+    left: -23px;
 
     display: block;
     width: 15px;
@@ -340,8 +353,34 @@
   }
 }
 
+.price-list__wrapper {
+  max-width: 400px;
+  text-align: center;
+
+  &--tickets {
+    text-align: left;
+  }
+}
+
+.price-list__legend {
+  text-align: left;
+  &--radio {
+    text-align: left;
+  }
+}
+
+@media (min-width: 341px) {
+  .price-list__checkbox {
+    transform: translateX(0);
+  }
+}
+
+
 @media (min-width: 500px) {
   .price-list__label {
+    &--full-name {
+      width: 100%;
+    }
     &--email {
       margin-right: auto;
       width: 48%;
@@ -352,11 +391,32 @@
       margin-bottom: 0;
     }
   }
+  .price-list__select {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 594px) {
+  .price-list__finish-info {
+    margin-left: 20px;
+  }
+  .price-list__label {
+    &::before {
+      right: -9px;
+    }
+  }
 }
 
 @media (min-width: 650px) {
   .price-list__finish-info {
     transform: translateX(-35px);
+  }
+  .price-list__label {
+    &--required {
+      &::after {
+        right: -15px;
+      }
+    }
   }
 }
 
@@ -408,5 +468,10 @@
     width: 16px;
     margin-left: 11px;
     transform: translateY(-5px);
+  }
+  .price-list__text {
+    &--agreement {
+      margin-top: 0;
+    }
   }
 }

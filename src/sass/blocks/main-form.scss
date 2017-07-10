@@ -4,6 +4,7 @@
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   box-sizing: border-box;
   margin: 0 15px;
   max-width: 540px;
@@ -48,9 +49,13 @@
   }
 }
 
+.main-form__checkbox {
+  vertical-align: middle;
+}
+
 .main-form__textarea {
   padding-left: 10px;
-
+  resize: none;
   &--description {
     min-height: 70px;
   }
@@ -74,6 +79,8 @@
   }
   &--agreement {
     margin: 0 auto;
+    width: auto;
+    cursor: pointer;
   }
   &--name {
     width: 480px;
@@ -171,9 +178,17 @@
   }
 }
 
-@media (min-width: $width-desktop-device) {
+@media (min-width: 1000px) {
   .main-form {
     top: -410px;
-    right: -311px;
+    right: 56px;
+    right: 10px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $width-desktop-device) {
+  .main-form {
+    right: 10px;
   }
 }

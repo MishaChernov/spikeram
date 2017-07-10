@@ -113,14 +113,6 @@
 }
 
 @media (min-width: 666px) {
-  .themes__list {
-    justify-content: space-between;
-  }
-  .themes__item {
-     &:last-child {
-      margin: 0 auto;
-    }
-  }
   .themes__text {
     padding: 0 68px;
     &--bold {
@@ -128,6 +120,7 @@
     }
   }
 }
+
 
 @media (min-width: $width-desktop-device) {
   .themes__wrapper {

@@ -1,7 +1,7 @@
 .burger {
   position: absolute;
-  top: 23px;
-  right: 32px;
+  top: 22px;
+  right: 15px;
 
   display: block;
   width: 18px;
@@ -19,6 +19,7 @@
 
   &--open {
     display: block;
+    transition-duration: 0.3s;
 
     &::before {
       content: "";
@@ -36,7 +37,8 @@
     }
   }
   &--close {
-    display: none;
+    display: block;
+    transition-duration: 0.3s;
 
     &::before,
     &::after {
@@ -60,7 +62,7 @@
   }
 }
 
-@media (min-width: $width-desktop-device) {
+@media (min-width: 1124px) {
   .burger {
     display: none;
   }

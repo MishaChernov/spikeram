@@ -12,6 +12,7 @@
 }
 
 .page-header__text {
+  display: none;
   width: 250px;
   margin: 0;
 
@@ -21,7 +22,13 @@
   color: #ffffff;
 }
 
-@media (min-width: $width-desktop-device) {
+@media (min-width: 476px) {
+  .page-header__text {
+    display: block;
+  }
+}
+
+@media (min-width: 1124px) {
   .page-main__wrapper {
     padding: 0;
   }

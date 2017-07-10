@@ -40,13 +40,6 @@ gulp.task('style', function() {
     .pipe(server.stream());
 });
 
-gulp.task('minjs', function() {
-  gulp.src('src/js/*.js')
-    .pipe(gulp.dest('build/js/'))
-    .pipe(uglify())
-    .pipe(gulp.dest('build/js/minjs'));
-});
-
 gulp.task('html', function() {
   gulp.src('src/*.html')
     .pipe(gulp.dest('build'));
@@ -108,7 +101,6 @@ gulp.task('build', function(fn) {
     'clean',
     'copy',
     'style',
-    'minjs',
     'images',
     'symbols',
     fn
