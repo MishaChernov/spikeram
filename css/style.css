@@ -538,8 +538,11 @@ body {
     display: block;
     background-repeat: repeat-none; }
   .main-form__label--agreement {
+    display: flex;
     margin: 0 auto;
+    margin-top: 10px;
     width: auto;
+    text-align: center;
     cursor: pointer; }
   .main-form__label--name {
     width: 480px; }
@@ -610,7 +613,9 @@ body {
   line-height: 24px;
   color: #444444;
   font-size: 12px;
-  color: #b0abb3; }
+  color: #b0abb3;
+  max-width: 165px;
+  line-height: 15px; }
 
 .page-header__wrapper {
   background-color: #31363f;
@@ -1065,15 +1070,13 @@ body {
   max-width: 400px;
   margin: 0 auto;
   margin-bottom: 90px;
-  margin-left: 10px;
-  margin-right: 10px;
   box-sizing: border-box;
   background-color: #f9f9f9;
   border: 1px solid rgba(0, 0, 0, 0.1); }
   .feedback__form::before {
     content: "";
     position: absolute;
-    right: 140px;
+    right: 105px;
     bottom: -36px;
     transform: rotate(90deg);
     display: block;
@@ -1093,8 +1096,11 @@ body {
   width: 100%;
   margin-bottom: 10px; }
   .feedback__label--agreement {
-    margin-top: 10px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15px;
     text-align: center;
+    justify-content: center;
     cursor: pointer; }
   .feedback__label--textarea {
     margin-bottom: 30px; }
@@ -1123,7 +1129,10 @@ body {
   line-height: 24px;
   color: #444444;
   font-size: 12px;
-  color: #b0abb3; }
+  color: #b0abb3;
+  max-width: 165px;
+  padding-left: 15px;
+  line-height: 15px; }
 
 .feedback__user {
   width: 260px;
@@ -1186,7 +1195,8 @@ body {
   padding-left: 0; }
 
 .feedback__checkbox {
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-right: -10px; }
 
 .map {
   position: relative;
@@ -1322,13 +1332,16 @@ body {
     position: relative;
     width: auto;
     margin-right: auto;
-    margin-left: 39px; }
+    margin-left: 34px;
+    cursor: pointer; }
+    .price-list__label--radio:last-child {
+      margin-right: 0; }
     .price-list__label--radio:hover::after {
       box-sizing: content-box;
       content: "";
       position: absolute;
       top: -50px;
-      left: -45px;
+      left: -31px;
       max-width: 100px;
       width: 75px;
       padding: 5px;
@@ -1346,7 +1359,7 @@ body {
       border: 15px solid transparent;
       border-top: 15px solid #3e4757;
       top: -19px;
-      left: -19px; }
+      left: 0px; }
   .price-list__label--radio-one:hover::after {
     content: "other"; }
   .price-list__label--radio-two:hover::after {
@@ -1364,7 +1377,7 @@ body {
   content: "";
   position: absolute;
   top: 2px;
-  left: -30px;
+  left: -25px;
   display: block;
   width: 20px;
   height: 20px;
@@ -1381,7 +1394,7 @@ body {
     content: "";
     position: absolute;
     top: 7px;
-    left: -25px;
+    left: -20px;
     display: block;
     width: 9px;
     height: 9px;
@@ -1633,6 +1646,10 @@ body {
   .tutorial__text--size{
     font-size: 24px;
     line-height: 30px; } }
+  @media (min-width: 450px){
+  .main-form__text--agreement{
+    max-width: none;
+    padding-left: 15px; } }
   @media (min-width: 476px){
   .intro__title{
     font-size: 50px; }
@@ -1662,6 +1679,24 @@ body {
     margin-bottom: 0; }
   .price-list__select{
     margin-top: 0; } }
+  @media (min-width: 529px){
+  .feedback__form{
+    max-width: 400px;
+    margin-bottom: 30px; }
+  .feedback__user{
+    margin-top: 98px;
+    margin: 0 auto;
+    width: 100%; }
+  .feedback__user-img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  .feedback__user-name{
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+  .feedback__user-text{
+    text-align: center; } }
   @media (min-width: 536px){
   .intro__btn{
     margin: 0 auto;
@@ -1692,13 +1727,15 @@ body {
     right: -9px; } }
   @media (min-width: 603px){
   .feedback__form{
-    margin: 0; }
+    max-width: 440px;
+    margin: 0 10px; }
   .feedback__form::before{
     top: 33px;
     right: -36px;
     transform: none; }
   .feedback__user{
-    margin: 0; }
+    width: auto;
+    margin-top: 30px; }
   .feedback__title{
     margin: 18px;
     margin-right: 0;
@@ -1777,7 +1814,10 @@ body {
   .feedback__form{
     width: 400px; }
   .feedback__title{
-    margin-left: 62px; } }
+    margin-left: 62px; }
+  .feedback__text--agreement{
+    display: inline;
+    margin: 0; } }
   @media (min-width: 780px){
   .intro__btn{
     margin-right: 0;
