@@ -17,6 +17,9 @@
 
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.8;
+  }
   &--open {
     display: block;
     transition-duration: 0.3s;
