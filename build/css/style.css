@@ -1058,6 +1058,7 @@ body {
   flex-wrap: wrap; }
 
 .feedback__form {
+  z-index: 3;
   position: relative;
   padding: 25px 10px;
   padding-bottom: 35px;
@@ -1129,10 +1130,33 @@ body {
   margin: 0 auto; }
 
 .feedback__user-img {
-  margin-top: -66px;
-  margin-left: -25px; }
+  position: relative;
+  z-index: 1;
+  margin-top: -65px;
+  margin-left: 45px;
+  margin-bottom: 66px;
+  border-radius: 50%;
+  cursor: pointer;
+  border-radius: 50%;
+  animation-name: radar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: easy;
+  animation-play-state: running;
+  animation-direction: reverse;
+  animation-timing-function: easy-in; }
+  .feedback__user-img:hover {
+    animation-play-state: paused; }
+
+@keyframes radar {
+  0% {
+    box-shadow: 0 0 0 8px #ffffff, 0 0 0 9px #ececec, 0 0 0 26px #ffffff, 0 0 0 27px #ececec, 0 0 0 48px #ffffff, 0 0 0 49px #ececec; }
+  100% {
+    box-shadow: none; } }
 
 .feedback__user-name {
+  position: relative;
+  z-index: 3;
   display: block;
   margin-top: -51px;
   margin-left: 19px;
@@ -1141,6 +1165,8 @@ body {
   font-weight: 700; }
 
 .feedback__user-text {
+  position: relative;
+  z-index: 3;
   display: block;
   margin-left: 10px;
   font-size: 16px; }
@@ -1676,7 +1702,10 @@ body {
   .feedback__title{
     margin: 18px;
     margin-right: 0;
-    margin-left: 0; } }
+    margin-left: 0; }
+  .feedback__user-img{
+    margin-top: -17px;
+    margin-left: 29px; } }
   @media (min-width: 630px){
   .tutorial__info{
     padding: 63px;
