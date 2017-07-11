@@ -143,7 +143,12 @@
     position: relative;
     width: auto;
     margin-right: auto;
-    margin-left: 39px;
+    margin-left: 34px;
+
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
 
     &:hover{
       &::after{
@@ -151,7 +156,7 @@
         content: "";
         position: absolute;
         top: -50px;
-        left: -45px;
+        left: -31px;
 
         max-width: 100px;
         width: 75px;
@@ -173,7 +178,7 @@
         border: 15px solid transparent;
         border-top: 15px solid #3e4757;
         top: -19px;
-        left: -19px;
+        left: 0px;
       }
     }
   }
@@ -213,7 +218,7 @@
     content: "";
     position: absolute;
     top: 2px;
-    left: -30px;
+    left: -25px;
 
     display: block;
     width: 20px;
@@ -236,7 +241,7 @@
     content: "";
     position: absolute;
     top: 7px;
-    left: -25px;
+    left: -20px;
 
     display: block;
     width: 9px;

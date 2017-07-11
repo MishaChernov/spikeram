@@ -78,8 +78,12 @@
     background-repeat: repeat-none;
   }
   &--agreement {
+    display: flex;
+
     margin: 0 auto;
+    margin-top: 10px;
     width: auto;
+    text-align: center;
     cursor: pointer;
   }
   &--name {
@@ -160,6 +164,17 @@
     @include tablet-primary-text-style;
     font-size: 12px;
     color: #b0abb3;
+    max-width: 165px;
+    line-height: 15px;
+  }
+}
+
+@media (min-width: 450px) {
+  .main-form__text {
+    &--agreement {
+      max-width: none;
+      padding-left: 15px;
+    }
   }
 }
 
