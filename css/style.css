@@ -654,8 +654,7 @@ body {
   line-height: 15px; }
 
 .about-me {
-  margin-top: 0;
-  margin-bottom: 70px; }
+  margin-top: 0; }
 
 .about-me__wrapper {
   display: flex;
@@ -2357,7 +2356,14 @@ body {
   .contact-us__form{
     top: 0; }
   .page-main__wrapper--first{
-    margin-top: -392px;
+    margin-top: -392px; }
+  .page-main__wrapper--bg{
+    background-image: url("../img/bg-main.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: repeat; }
+  .page-main__wrapper--bg-sponsoram{
+    padding-bottom: 70px;
     background-image: url("../img/bg-main.jpg");
     background-position: center bottom;
     background-size: cover;
@@ -2507,6 +2513,8 @@ body {
   .page-main__wrapper--second{
     display: flex;
     padding-top: 50px; }
+  .page-main__wrapper--bg-sponsoram{
+    padding-bottom: 70px; }
   .required-info{
     position: relative;
     display: flex;
