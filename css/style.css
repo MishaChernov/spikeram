@@ -814,6 +814,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 10px;
+  padding-bottom: 65px;
   text-align: center; }
 
 .rate__price-wrapper {
@@ -868,6 +869,7 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 .rate__subtitle {
