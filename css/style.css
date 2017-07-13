@@ -654,7 +654,8 @@ body {
   line-height: 15px; }
 
 .about-me {
-  margin-top: 0; }
+  margin-top: 0;
+  padding-bottom: 40px; }
 
 .about-me__wrapper {
   display: flex;
@@ -2063,11 +2064,6 @@ body {
     width: 255px; }
   .address-card__btn::before, .address-card__btn::after{
     left: 21px; } }
-  @media (min-width: 410px){
-  .rate__text-price{
-    font-size: 60px; }
-  .rate__price-wrapper{
-    padding: 30px 57px; } }
   @media (min-width: 440px){
   .tutorial__item::after{
     transform: scale(1) translateX(-50%); }
@@ -2093,6 +2089,10 @@ body {
     color: #31363f; }
   .title__text--video{
     color: #ffffff; }
+  .rate__text-price{
+    font-size: 60px; }
+  .rate__price-wrapper{
+    padding: 30px 57px; }
   .map__link{
     height: 400px;
     background-position: 60% 50%; }
