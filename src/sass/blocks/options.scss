@@ -54,6 +54,8 @@
 
   &:first-of-type {
     max-width: 570px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   &:last-of-type {
     text-align: right;
@@ -68,6 +70,10 @@
   border-right: 1px solid #e1e1e1;
 
   &:last-child {
+    width: 86px;
+    padding-left: 10px;
+    padding-right: 10px;
+
     border-right: none;
   }
 }
@@ -80,6 +86,10 @@
     max-width: 55px;
     box-sizing: border-box;
     text-align: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 70px;
   }
   &--price {
     font-size: 18px;
@@ -107,5 +117,43 @@
 @media (min-width: 800px) {
   .options__wrapper {
     padding: 30px 60px;
+  }
+  .options__td {
+    &--ammount {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: auto;
+    }
+  }
+  .options__th {
+    &:last-of-type {
+      text-align: right;
+      width: 170px;
+      padding-left: 30px;
+      padding-right: 30px;
+      box-sizing: border-box;
+    }
+  }
+  .options__td,
+  .options__th {
+    box-sizing: border-box;
+    padding: 15px 30px;
+    border-right: 1px solid #e1e1e1;
+
+    &:last-child {
+      max-width: auto;
+      padding: 15px 30px;
+    }
+  }
+  .options__td {
+    &:first-of-type {
+      max-width: 570px;
+      padding-right: 10px;
+      padding-left: 30px;
+    }
+    &:last-of-type {
+      text-align: right;
+      max-width: 170px;
+    }
   }
 }
