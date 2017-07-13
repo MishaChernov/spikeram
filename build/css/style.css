@@ -949,7 +949,8 @@ body {
 
 .rate__addition {
   padding: 70px 0;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 .rate__addition-wrapper {
   display: flex;
@@ -958,7 +959,8 @@ body {
 
 .options {
   background-color: #f7f8f8;
-  padding: 70px 0; }
+  padding: 70px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 .options__title {
   margin: 0 auto;
