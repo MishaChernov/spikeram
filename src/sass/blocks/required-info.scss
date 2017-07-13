@@ -77,5 +77,11 @@
     position: relative;
     margin-top: -354px;
     margin-right: 11px;
+
+    &--margin {
+      margin-top: 0;
+      margin-right: 0;
+      transform: translateY(-429px);
+    }
   }
 }

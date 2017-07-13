@@ -39,6 +39,22 @@
       background-repeat: none;
     }
   }
+
+  &--download {
+     &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 17px;
+
+      display: block;
+      width: 14px;
+      height: 14px;
+
+      background-image: url("../img/icons/download.svg");
+    }
+  }
   @include primary-hover-active-effects;
 }
 

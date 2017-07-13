@@ -1,0 +1,238 @@
+.rate {
+  padding-top: 75px;
+  background-color: #f7f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rate__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10px;
+  padding-bottom: 65px;
+  text-align: center;
+}
+
+.rate__price-wrapper {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  padding: 30px 33px;
+  box-sizing: border-box;
+
+  &--addition {
+    position: relative;
+
+    &::before ,
+    &::after {
+      content: "";
+      position: absolute;
+      left: -9px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      display: block;
+      width: 16px;
+      height: 2px;
+
+      background-color: #ffffff;
+    }
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.rate__price {
+  position: relative;
+  max-width: 380px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    background-color: #ffb100;
+    background-image: url("../img/icons/star.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--addition {
+    &::before {
+      background-image: none;
+    }
+  }
+}
+
+.rate__text-name {
+  display: block;
+  padding-bottom: 20px;
+
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rate__subtitle {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  font-weight: 300;
+}
+
+.rate__text-price {
+  display: block;
+  margin-top: 28px;
+  padding: 0;
+
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &--size {
+    font-size: 30px;
+  }
+}
+
+.rate__includes {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.rate__includes-item {
+  position: relative;
+  display: block;
+  width: 140px;
+  padding-top: 90px;
+  margin: 20px;
+  margin-top: 0;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+  }
+
+  &:nth-child(1) {
+    &::before {
+      width: 30px;
+      height: 60px;
+
+      background-image: url("../img/icons/features-icon-1.svg");
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      width: 38px;
+      height: 60px;
+
+      background-image: url("../img/icons/features-icon-2.svg");
+    }
+  }
+  &:nth-child(3) {
+    &::before {
+      width: 60px;
+      height: 56px;
+
+      background-image: url("../img/icons/features-icon-3.svg");
+    }
+  }
+  &:nth-child(4) {
+    &::before {
+      width: 59px;
+      height: 56px;
+
+      background-image: url("../img/icons/features-icon-4.svg");
+    }
+  }
+  &:nth-child(5) {
+    &::before {
+      width: 43px;
+      height: 60px;
+
+      background-image: url("../img/icons/features-icon-5.svg");
+    }
+  }
+  &:nth-child(6) {
+    &::before {
+      width: 60px;
+      height: 53px;
+
+      background-image: url("../img/icons/features-icon-6.svg");
+    }
+  }
+  &:nth-child(7) {
+    &::before {
+      width: 50px;
+      height: 60px;
+
+      background-image: url("../img/icons/features-icon-7.svg");
+    }
+  }
+}
+
+.rate__addition {
+  padding: 70px 0;
+  background-color: #ffffff;
+}
+
+.rate__addition-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (min-width: 500px) {
+  .rate__text-price {
+    font-size: 60px;
+  }
+  .rate__price-wrapper {
+    padding: 30px 57px;
+  }
+}
+
+@media (min-width: 735px) {
+  .rate__price {
+    margin: 0 40px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $width-desktop-device) {
+  .rate__includes-item {
+    margin: 0 12px;
+  }
+}

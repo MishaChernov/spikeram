@@ -1,7 +1,21 @@
+.page-main__wrapper-form {
+  padding: 0 10px;
+  margin-bottom: -30px;
+}
+
 @media (min-width: 1000px) {
   .page-main__wrapper {
     &--first {
       margin-top: -392px;
+    }
+    &--bg {
+      background-image: url("../img/bg-main.jpg");
+      background-position: center bottom;
+      background-size: cover;
+      background-repeat: repeat;
+    }
+    &--bg-sponsoram {
+      padding-bottom: 70px;
       background-image: url("../img/bg-main.jpg");
       background-position: center bottom;
       background-size: cover;
@@ -24,6 +38,9 @@
     &--second {
       display: flex;
       padding-top: 50px;
+    }
+    &--bg-sponsoram {
+      padding-bottom: 70px;
     }
   }
 }

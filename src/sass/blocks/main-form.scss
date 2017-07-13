@@ -12,6 +12,13 @@
 
   background-color: #f9f9f9;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &--secondary {
+    margin: 0;
+    top: -39px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .main-form__title {
@@ -79,12 +86,14 @@
   }
   &--agreement {
     display: flex;
+    justify-content: center;
 
     margin: 0 auto;
     margin-top: 10px;
     width: auto;
     text-align: center;
     cursor: pointer;
+
   }
   &--name {
     width: 480px;
@@ -181,6 +190,11 @@
 @media (min-width: 570px) {
   .main-form {
     margin: 0 auto;
+
+    &--secondary {
+      margin: 0;
+      margin-bottom: -30px;
+    }
   }
   .main-form__label {
     &--email,
@@ -199,11 +213,27 @@
     right: 56px;
     right: 10px;
     margin-right: 0;
+
+    &--secondary {
+      margin: 0;
+      margin-bottom: -30px;
+      top: -39px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
 @media (min-width: $width-desktop-device) {
   .main-form {
     right: 10px;
+
+    &--secondary {
+      margin: 0;
+      margin-bottom: -30px;
+      top: -39px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

@@ -150,6 +150,12 @@
   }
 }
 
+.intro__btn {
+  &--center {
+    margin: 0 auto;
+  }
+}
+
 .intro__descriprion {
   padding: 0 45px;
   margin-bottom: 17px;
@@ -159,6 +165,20 @@
   font-style: normal;
   font-size: 18px;
   color: #ffffff;
+
+  &--center {
+    margin-top: 18px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    line-height: 60px;
+    font-weight: 700;
+  }
+  &--size {
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    text-align: center;
+  }
 }
 
 .intro__subtitle {
@@ -170,12 +190,21 @@
   line-height: 30px;
   font-weight: 300;
   color: #ffffff;
+
+  &--center {
+    margin-top: 24px;
+    margin-bottom: 18px;
+  }
 }
 
 .intro__main-wrapper {
   text-align: center;
   margin-top: 31px;
 
+  &--center {
+    margin: 0 auto;
+    margin-top: 90px;
+  }
 }
 
 @media (min-width: 476px) {
@@ -197,6 +226,11 @@
     margin-top: 10px;
     margin-left: auto;
   }
+  .intro__btn {
+    &--center {
+      margin: 0 auto;
+    }
+  }
 }
 
 @media (min-width: 1000px) {
@@ -205,20 +239,55 @@
     text-align: left;
     margin-top: 60px;
     margin-left: 10px;
+
+    &--center {
+      margin: 0 auto;
+      margin-top: 90px;
+      text-align: center;
+    }
+  }
+  .intro__title {
+    &--center {
+      text-align: center;
+      margin-bottom: 0;
+    }
   }
   .intro__descriprion {
     max-width: 415px;
     margin-top: 10px;
     text-align: left;
     padding: 0;
+
+    &--center {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 18px;
+      margin-bottom: 0;
+    }
+    &--size {
+      margin-top: 0;
+      text-align: center;
+    }
   }
   .intro__subtitle {
     max-width: 415px;
     text-align: left;
     padding: 0;
+
+    &--center {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
   }
   .intro__btn--plus {
     margin-left: 10px;
+  }
+  .intro__btn {
+    &--center {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -227,6 +296,10 @@
     padding-bottom: 38px;
     padding-left: 0;
     padding-right: 0;
+
+    &--padding {
+      padding-bottom: 90px;
+    }
   }
   .intro__wrapper {
     display: flex;
@@ -262,9 +335,14 @@
     text-align: left;
     line-height: 48px;
 
+    &--center {
+      text-align: center;
+      margin-bottom: 0;
+    }
+
     &::before {
-      right: 255px;
-      top: -31px;
+      right: 87px;
+      top: -23px;
     }
   }
   .intro__btn {
@@ -275,6 +353,11 @@
       margin-top: 40px;
       margin-left: 0;
       margin-right: 0;
+    }
+  }
+  .intro__btn {
+    &--center {
+      margin: 0 auto;
     }
   }
 }
